@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+:root.light{
+    --bgc-image: url(./assets/light.jpg);
+    --mode-icon: url(./assets/sun.svg);
+    --text-color: black;
+    --bgc-color: white;
+    --shadow: black;
+}
+
+:root.dark{
+    --bgc-image: url(./assets/dark.jpg);
+    --mode-icon: url(./assets/moon.svg);
+    --text-color: white;
+    --bgc-color: black;
+    --shadow: white;
+}
+
+@font-face {
+    font-family: Dancing;
+    src: url(./assets/DancingScript.ttf);
+}
+
+.page{
+    display: flex;
+    height: 100%
+}
+
+.left,
+.right{
+    height: 100vh;
+}
+
+.left{
+    width: 40vw;
+    background-image: var(--bgc-image);
+    background-size: cover;
+}
+
+.title{
+    color: white;
+    font-family: Dancing;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dog-logo{
+    height: 8rem;
+    width: auto;
+}
+
+.right{
+    width: 60vw;
+    font-family: var(--font);
+    color: var(--text-color);
+    padding-top: 15vh;
+    background-color: var(--bgc-color);
+}
+
+.intro,
+.inner-form{
+    padding: 0 8vw;
+}
+
+.intro,
+.form-heading{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.inner-form{
+    box-shadow: 5px 5px 20px var(--shadow);
+}
+
+.form-heading{
+    padding: 2vh 0;
+}
+
+
