@@ -83,7 +83,25 @@
 }
 
 .form-heading{
-    padding: 2vh 0;
+    padding: 3vh 0 2vh 0;
+}
+
+.inputs{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+    padding-bottom: 3vh;
+}
+
+.input-left,
+.input-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+label{
+    font-size: 0.70rem;
 }
 
 
