@@ -132,3 +132,12 @@ label{
     content: "Log in";
     color: var(--button-color);
 }
+
+#theme{
+    display: block;
+    margin-top: 3vh;
+    background-color: var(--button-color);
+    border: 0px;
+    border-radius: 8px;
+    padding-top: 6px;
+}
