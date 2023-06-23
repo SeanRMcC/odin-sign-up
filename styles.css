@@ -12,6 +12,7 @@
     --text-color: black;
     --bgc-color: white;
     --shadow: black;
+    --button-color: gold;
 }
 
 :root.dark{
@@ -20,6 +21,7 @@
     --text-color: white;
     --bgc-color: black;
     --shadow: white;
+    --button-color: purple;
 }
 
 @font-face {
@@ -104,4 +106,29 @@ label{
     font-size: 0.70rem;
 }
 
+.sign-up{
+    margin-top: 4vh;
+    padding: 0 8vw;
+    font-family: var(--font);
+}
 
+#create{
+    border: 0px;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.log-in{
+    margin-top: 3vh;
+    font-size: 0.8rem;
+
+}
+
+.log-in::after{
+    content: "Log in";
+    color: var(--button-color);
+}
